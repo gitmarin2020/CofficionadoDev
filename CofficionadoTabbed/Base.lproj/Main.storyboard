@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tX5-7Q-rUA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -7,7 +7,7 @@
         <!--Coffees-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="SecondViewController" customModule="CofficionadoTabbed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Coffees" id="9pv-A4-QxB" customClass="SecondViewController" customModule="CofficionadoTabbed" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -37,9 +37,6 @@
                                                     <state key="normal" title="Colombia">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
-                                                    <connections>
-                                                        <segue destination="MKh-aa-B4J" kind="push" id="1f2-0X-u9C"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -96,15 +93,21 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Coffees" image="first" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" title="Coffees" id="SRV-i1-eQw"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="tableCountries" destination="4sh-6j-xST" id="Iik-Ka-2QY"/>
+                        <segue destination="MKh-aa-B4J" kind="push" identifier="CountryViewController" id="ai3-2l-bvQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="759.5" y="-318.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Country-->
         <scene sceneID="v8d-CF-HfG">
             <objects>
-                <viewController id="MKh-aa-B4J" sceneMemberID="viewController">
+                <viewController id="MKh-aa-B4J" customClass="CountryViewController" customModule="CofficionadoTabbed" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xQ1-mf-c2I"/>
                         <viewControllerLayoutGuide type="bottom" id="iXS-PL-CJW"/>
@@ -131,16 +134,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mEG-lI-IhS"/>
+                    <navigationItem key="navigationItem" title="Country" id="mEG-lI-IhS"/>
+                    <connections>
+                        <outlet property="countryDescription" destination="BRZ-QG-oGa" id="ZVH-I6-Uja"/>
+                        <outlet property="countryImage" destination="Pkm-Tm-bCB" id="Lpt-mR-1sN"/>
+                        <outlet property="countryName" destination="LZd-s1-kdl" id="bhG-gR-HDg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xlF-pH-hFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1377.5" y="-334.5"/>
+            <point key="canvasLocation" x="1266.5" y="-318.5"/>
         </scene>
         <!--Styles-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="CofficionadoTabbed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="FirstViewController" customModule="CofficionadoTabbed" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -149,12 +157,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="COFFEE STYLES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFz-8W-Lcm">
-                                <rect key="frame" x="110" y="36" width="155" height="21"/>
-                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="macchiato.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mth-L3-fIT">
                                 <rect key="frame" x="81" y="324" width="240" height="128"/>
                             </imageView>
@@ -184,12 +186,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Styles" image="second" id="cPa-gy-q4n"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749.5" y="478.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Style-->
         <scene sceneID="a38-PL-LeK">
             <objects>
                 <viewController id="9Uh-H2-fQ8" sceneMemberID="viewController">
@@ -219,16 +222,34 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="tlU-kl-5Sd"/>
+                    <navigationItem key="navigationItem" title="Style" id="tlU-kl-5Sd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FaC-h2-qdj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1260.5" y="470.5"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="e7G-3y-A5S">
+            <objects>
+                <navigationController id="tX5-7Q-rUA" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xop-3V-64w">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="49e-Tb-3d3" kind="relationship" relationship="rootViewController" id="rgV-0F-5gp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hbN-NW-PMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-650" y="-512"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7x5-Nv-neQ"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -244,7 +265,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-16.5" y="5.5"/>
         </scene>
     </scenes>
     <resources>

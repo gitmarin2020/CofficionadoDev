@@ -10,6 +10,7 @@
 		974A80551AA6CEF200759B0C /* Hokitika_Cheese_and_Deli,_Hokitika_(3526706594).jpg in Resources */ = {isa = PBXBuildFile; fileRef = 974A80531AA6CEF200759B0C /* Hokitika_Cheese_and_Deli,_Hokitika_(3526706594).jpg */; };
 		97F4053B1AA6D1FE0091AA50 /* Fair-Trade-Certified-Logo-Pantone-376-C.png in Resources */ = {isa = PBXBuildFile; fileRef = 97F4053A1AA6D1FE0091AA50 /* Fair-Trade-Certified-Logo-Pantone-376-C.png */; };
 		97F4053D1AA6D23F0091AA50 /* logo_square_big.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97F4053C1AA6D23F0091AA50 /* logo_square_big.jpg */; };
+		97F4053F1AA6DD580091AA50 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F4053E1AA6DD580091AA50 /* CountryViewController.swift */; };
 		E8CE5CB81AA1194C00D8AF5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CE5CB71AA1194C00D8AF5A /* AppDelegate.swift */; };
 		E8CE5CBA1AA1194C00D8AF5A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CE5CB91AA1194C00D8AF5A /* FirstViewController.swift */; };
 		E8CE5CBC1AA1194C00D8AF5A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CE5CBB1AA1194C00D8AF5A /* SecondViewController.swift */; };
@@ -47,6 +48,7 @@
 		974A80531AA6CEF200759B0C /* Hokitika_Cheese_and_Deli,_Hokitika_(3526706594).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Hokitika_Cheese_and_Deli,_Hokitika_(3526706594).jpg"; sourceTree = "<group>"; };
 		97F4053A1AA6D1FE0091AA50 /* Fair-Trade-Certified-Logo-Pantone-376-C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fair-Trade-Certified-Logo-Pantone-376-C.png"; sourceTree = "<group>"; };
 		97F4053C1AA6D23F0091AA50 /* logo_square_big.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo_square_big.jpg; sourceTree = "<group>"; };
+		97F4053E1AA6DD580091AA50 /* CountryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
 		E8CE5CB21AA1194C00D8AF5A /* CofficionadoTabbed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CofficionadoTabbed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8CE5CB61AA1194C00D8AF5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8CE5CB71AA1194C00D8AF5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				E8CE5CB71AA1194C00D8AF5A /* AppDelegate.swift */,
 				E8CE5CB91AA1194C00D8AF5A /* FirstViewController.swift */,
 				E8CE5CBB1AA1194C00D8AF5A /* SecondViewController.swift */,
+				97F4053E1AA6DD580091AA50 /* CountryViewController.swift */,
 				E8CE5CBD1AA1194C00D8AF5A /* Main.storyboard */,
 				974A80531AA6CEF200759B0C /* Hokitika_Cheese_and_Deli,_Hokitika_(3526706594).jpg */,
 				E8CE5CC01AA1194C00D8AF5A /* Images.xcassets */,
@@ -310,6 +313,7 @@
 				E8CE5CBC1AA1194C00D8AF5A /* SecondViewController.swift in Sources */,
 				E8CE5CB81AA1194C00D8AF5A /* AppDelegate.swift in Sources */,
 				E8CE5CBA1AA1194C00D8AF5A /* FirstViewController.swift in Sources */,
+				97F4053F1AA6DD580091AA50 /* CountryViewController.swift in Sources */,
 				E8CE5CEB1AA126A300D8AF5A /* Coffees.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
