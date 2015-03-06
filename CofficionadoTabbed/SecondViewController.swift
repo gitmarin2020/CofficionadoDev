@@ -27,6 +27,9 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // SET BACKGROUND
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg1")!);
+        
         tableCountries.delegate = self;
         tableCountries.dataSource = self;
         
@@ -43,11 +46,15 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) ->
         UITableViewCell {
-        var cell = UITableViewCell();
-        let text = tableContent[indexPath.row];
-        selectedRow = text;
-        cell.textLabel?.text = text;
-        return cell;
+            var cell = UITableViewCell();
+            let text = tableContent[indexPath.row];
+            selectedRow = text;
+            
+            cell.textLabel?.text = text;
+            cell.textLabel?.textColor = UIColor.whiteColor();
+            cell.backgroundColor = UIColor.clearColor();
+            
+            return cell;
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

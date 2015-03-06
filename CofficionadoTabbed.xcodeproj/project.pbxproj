@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		974A80551AA6CEF200759B0C /* Hokitika_Cheese_and_Deli,_Hokitika_(3526706594).jpg in Resources */ = {isa = PBXBuildFile; fileRef = 974A80531AA6CEF200759B0C /* Hokitika_Cheese_and_Deli,_Hokitika_(3526706594).jpg */; };
+		97691A9A1AA929FF00A210D1 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97691A991AA929FF00A210D1 /* Launch Screen.xib */; };
+		97691A9F1AA92BA300A210D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97691A9D1AA92BA300A210D1 /* Images.xcassets */; };
+		97AB06161AA95C6B008AFF10 /* StyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AB06151AA95C6B008AFF10 /* StyleViewController.swift */; };
 		97F4053B1AA6D1FE0091AA50 /* Fair-Trade-Certified-Logo-Pantone-376-C.png in Resources */ = {isa = PBXBuildFile; fileRef = 97F4053A1AA6D1FE0091AA50 /* Fair-Trade-Certified-Logo-Pantone-376-C.png */; };
 		97F4053D1AA6D23F0091AA50 /* logo_square_big.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97F4053C1AA6D23F0091AA50 /* logo_square_big.jpg */; };
 		97F4053F1AA6DD580091AA50 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F4053E1AA6DD580091AA50 /* CountryViewController.swift */; };
@@ -15,23 +17,8 @@
 		E8CE5CBA1AA1194C00D8AF5A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CE5CB91AA1194C00D8AF5A /* FirstViewController.swift */; };
 		E8CE5CBC1AA1194C00D8AF5A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CE5CBB1AA1194C00D8AF5A /* SecondViewController.swift */; };
 		E8CE5CBF1AA1194C00D8AF5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8CE5CBD1AA1194C00D8AF5A /* Main.storyboard */; };
-		E8CE5CC11AA1194C00D8AF5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8CE5CC01AA1194C00D8AF5A /* Images.xcassets */; };
-		E8CE5CC41AA1194C00D8AF5A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8CE5CC21AA1194C00D8AF5A /* LaunchScreen.xib */; };
 		E8CE5CD01AA1194C00D8AF5A /* CofficionadoTabbedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CE5CCF1AA1194C00D8AF5A /* CofficionadoTabbedTests.swift */; };
 		E8CE5CEB1AA126A300D8AF5A /* Coffees.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CE5CEA1AA126A300D8AF5A /* Coffees.swift */; };
-		E8CE5D271AA68C3600D8AF5A /* americano.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CE5D1A1AA68C3600D8AF5A /* americano.png */; };
-		E8CE5D281AA68C3600D8AF5A /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CE5D1B1AA68C3600D8AF5A /* black.png */; };
-		E8CE5D291AA68C3600D8AF5A /* cappucinno.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CE5D1D1AA68C3600D8AF5A /* cappucinno.png */; };
-		E8CE5D2A1AA68C3600D8AF5A /* espresso.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CE5D1E1AA68C3600D8AF5A /* espresso.png */; };
-		E8CE5D2B1AA68C3600D8AF5A /* flatwhite.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CE5D1F1AA68C3600D8AF5A /* flatwhite.png */; };
-		E8CE5D2C1AA68C3600D8AF5A /* galao.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CE5D201AA68C3600D8AF5A /* galao.png */; };
-		E8CE5D2D1AA68C3600D8AF5A /* icecoffee.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CE5D211AA68C3600D8AF5A /* icecoffee.png */; };
-		E8CE5D2E1AA68C3600D8AF5A /* latte.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CE5D221AA68C3600D8AF5A /* latte.png */; };
-		E8CE5D2F1AA68C3600D8AF5A /* macchiato.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CE5D231AA68C3600D8AF5A /* macchiato.png */; };
-		E8CE5D301AA68C3600D8AF5A /* melange.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CE5D241AA68C3600D8AF5A /* melange.png */; };
-		E8CE5D311AA68C3600D8AF5A /* tripplo.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CE5D251AA68C3600D8AF5A /* tripplo.png */; };
-		E8CE5D321AA68C3600D8AF5A /* viennese.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CE5D261AA68C3600D8AF5A /* viennese.png */; };
-		E8CE5D341AA68CCA00D8AF5A /* 5495814868_c87d7c39a8_o.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8CE5D331AA68CCA00D8AF5A /* 5495814868_c87d7c39a8_o.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		974A80531AA6CEF200759B0C /* Hokitika_Cheese_and_Deli,_Hokitika_(3526706594).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Hokitika_Cheese_and_Deli,_Hokitika_(3526706594).jpg"; sourceTree = "<group>"; };
+		97691A991AA929FF00A210D1 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		97691A9D1AA92BA300A210D1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
+		97AB06151AA95C6B008AFF10 /* StyleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleViewController.swift; sourceTree = "<group>"; };
 		97F4053A1AA6D1FE0091AA50 /* Fair-Trade-Certified-Logo-Pantone-376-C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fair-Trade-Certified-Logo-Pantone-376-C.png"; sourceTree = "<group>"; };
 		97F4053C1AA6D23F0091AA50 /* logo_square_big.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo_square_big.jpg; sourceTree = "<group>"; };
 		97F4053E1AA6DD580091AA50 /* CountryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
@@ -55,25 +44,10 @@
 		E8CE5CB91AA1194C00D8AF5A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		E8CE5CBB1AA1194C00D8AF5A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		E8CE5CBE1AA1194C00D8AF5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E8CE5CC01AA1194C00D8AF5A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E8CE5CC31AA1194C00D8AF5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E8CE5CC91AA1194C00D8AF5A /* CofficionadoTabbedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CofficionadoTabbedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8CE5CCE1AA1194C00D8AF5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8CE5CCF1AA1194C00D8AF5A /* CofficionadoTabbedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CofficionadoTabbedTests.swift; sourceTree = "<group>"; };
 		E8CE5CEA1AA126A300D8AF5A /* Coffees.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coffees.swift; sourceTree = "<group>"; };
-		E8CE5D1A1AA68C3600D8AF5A /* americano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = americano.png; sourceTree = "<group>"; };
-		E8CE5D1C1AA68C3600D8AF5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/black.png; sourceTree = "<group>"; };
-		E8CE5D1D1AA68C3600D8AF5A /* cappucinno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cappucinno.png; sourceTree = "<group>"; };
-		E8CE5D1E1AA68C3600D8AF5A /* espresso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = espresso.png; sourceTree = "<group>"; };
-		E8CE5D1F1AA68C3600D8AF5A /* flatwhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flatwhite.png; sourceTree = "<group>"; };
-		E8CE5D201AA68C3600D8AF5A /* galao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = galao.png; sourceTree = "<group>"; };
-		E8CE5D211AA68C3600D8AF5A /* icecoffee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icecoffee.png; sourceTree = "<group>"; };
-		E8CE5D221AA68C3600D8AF5A /* latte.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = latte.png; sourceTree = "<group>"; };
-		E8CE5D231AA68C3600D8AF5A /* macchiato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macchiato.png; sourceTree = "<group>"; };
-		E8CE5D241AA68C3600D8AF5A /* melange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = melange.png; sourceTree = "<group>"; };
-		E8CE5D251AA68C3600D8AF5A /* tripplo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tripplo.png; sourceTree = "<group>"; };
-		E8CE5D261AA68C3600D8AF5A /* viennese.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viennese.png; sourceTree = "<group>"; };
-		E8CE5D331AA68CCA00D8AF5A /* 5495814868_c87d7c39a8_o.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5495814868_c87d7c39a8_o.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,10 +94,10 @@
 				E8CE5CB91AA1194C00D8AF5A /* FirstViewController.swift */,
 				E8CE5CBB1AA1194C00D8AF5A /* SecondViewController.swift */,
 				97F4053E1AA6DD580091AA50 /* CountryViewController.swift */,
+				97AB06151AA95C6B008AFF10 /* StyleViewController.swift */,
 				E8CE5CBD1AA1194C00D8AF5A /* Main.storyboard */,
-				974A80531AA6CEF200759B0C /* Hokitika_Cheese_and_Deli,_Hokitika_(3526706594).jpg */,
-				E8CE5CC01AA1194C00D8AF5A /* Images.xcassets */,
-				E8CE5CC21AA1194C00D8AF5A /* LaunchScreen.xib */,
+				97691A9D1AA92BA300A210D1 /* Images.xcassets */,
+				97691A991AA929FF00A210D1 /* Launch Screen.xib */,
 				E8CE5CB51AA1194C00D8AF5A /* Supporting Files */,
 			);
 			path = CofficionadoTabbed;
@@ -158,40 +132,11 @@
 		E8CE5CD91AA1195700D8AF5A /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				E8CE5CFC1AA1307500D8AF5A /* Colombia */,
-				E8CE5D191AA68C3600D8AF5A /* coffeetypes */,
 				97F4053A1AA6D1FE0091AA50 /* Fair-Trade-Certified-Logo-Pantone-376-C.png */,
 				97F4053C1AA6D23F0091AA50 /* logo_square_big.jpg */,
 			);
 			name = Images;
 			path = ..;
-			sourceTree = "<group>";
-		};
-		E8CE5CFC1AA1307500D8AF5A /* Colombia */ = {
-			isa = PBXGroup;
-			children = (
-				E8CE5D331AA68CCA00D8AF5A /* 5495814868_c87d7c39a8_o.jpg */,
-			);
-			name = Colombia;
-			sourceTree = "<group>";
-		};
-		E8CE5D191AA68C3600D8AF5A /* coffeetypes */ = {
-			isa = PBXGroup;
-			children = (
-				E8CE5D1A1AA68C3600D8AF5A /* americano.png */,
-				E8CE5D1B1AA68C3600D8AF5A /* black.png */,
-				E8CE5D1D1AA68C3600D8AF5A /* cappucinno.png */,
-				E8CE5D1E1AA68C3600D8AF5A /* espresso.png */,
-				E8CE5D1F1AA68C3600D8AF5A /* flatwhite.png */,
-				E8CE5D201AA68C3600D8AF5A /* galao.png */,
-				E8CE5D211AA68C3600D8AF5A /* icecoffee.png */,
-				E8CE5D221AA68C3600D8AF5A /* latte.png */,
-				E8CE5D231AA68C3600D8AF5A /* macchiato.png */,
-				E8CE5D241AA68C3600D8AF5A /* melange.png */,
-				E8CE5D251AA68C3600D8AF5A /* tripplo.png */,
-				E8CE5D261AA68C3600D8AF5A /* viennese.png */,
-			);
-			path = coffeetypes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +188,7 @@
 				TargetAttributes = {
 					E8CE5CB11AA1194C00D8AF5A = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = G68VZW797R;
 					};
 					E8CE5CC81AA1194C00D8AF5A = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -274,25 +220,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8CE5D271AA68C3600D8AF5A /* americano.png in Resources */,
-				974A80551AA6CEF200759B0C /* Hokitika_Cheese_and_Deli,_Hokitika_(3526706594).jpg in Resources */,
-				E8CE5D321AA68C3600D8AF5A /* viennese.png in Resources */,
 				E8CE5CBF1AA1194C00D8AF5A /* Main.storyboard in Resources */,
-				E8CE5D2C1AA68C3600D8AF5A /* galao.png in Resources */,
-				E8CE5D2D1AA68C3600D8AF5A /* icecoffee.png in Resources */,
-				E8CE5D2F1AA68C3600D8AF5A /* macchiato.png in Resources */,
-				E8CE5CC41AA1194C00D8AF5A /* LaunchScreen.xib in Resources */,
+				97691A9F1AA92BA300A210D1 /* Images.xcassets in Resources */,
 				97F4053D1AA6D23F0091AA50 /* logo_square_big.jpg in Resources */,
-				E8CE5D341AA68CCA00D8AF5A /* 5495814868_c87d7c39a8_o.jpg in Resources */,
-				E8CE5CC11AA1194C00D8AF5A /* Images.xcassets in Resources */,
-				E8CE5D291AA68C3600D8AF5A /* cappucinno.png in Resources */,
-				E8CE5D2E1AA68C3600D8AF5A /* latte.png in Resources */,
-				E8CE5D281AA68C3600D8AF5A /* black.png in Resources */,
-				E8CE5D301AA68C3600D8AF5A /* melange.png in Resources */,
-				E8CE5D2B1AA68C3600D8AF5A /* flatwhite.png in Resources */,
-				E8CE5D311AA68C3600D8AF5A /* tripplo.png in Resources */,
 				97F4053B1AA6D1FE0091AA50 /* Fair-Trade-Certified-Logo-Pantone-376-C.png in Resources */,
-				E8CE5D2A1AA68C3600D8AF5A /* espresso.png in Resources */,
+				97691A9A1AA929FF00A210D1 /* Launch Screen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97AB06161AA95C6B008AFF10 /* StyleViewController.swift in Sources */,
 				E8CE5CBC1AA1194C00D8AF5A /* SecondViewController.swift in Sources */,
 				E8CE5CB81AA1194C00D8AF5A /* AppDelegate.swift in Sources */,
 				E8CE5CBA1AA1194C00D8AF5A /* FirstViewController.swift in Sources */,
@@ -343,22 +276,6 @@
 				E8CE5CBE1AA1194C00D8AF5A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E8CE5CC21AA1194C00D8AF5A /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E8CE5CC31AA1194C00D8AF5A /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		E8CE5D1B1AA68C3600D8AF5A /* black.png */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E8CE5D1C1AA68C3600D8AF5A /* Base */,
-			);
-			name = black.png;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
