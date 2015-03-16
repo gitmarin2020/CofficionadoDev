@@ -48,6 +48,9 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         tableStyles.delegate = self;
         tableStyles.dataSource = self;
+        
+        // SET BACKGROUND
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg1")!);
     
     }
     

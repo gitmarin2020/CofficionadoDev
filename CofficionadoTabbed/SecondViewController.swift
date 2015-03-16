@@ -16,11 +16,20 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         "Papua New Guinea",
         "Brazil",
         "Sumatra",
-        "Honduras",
+        "Nicaragua",
+        "Mexico",
+        "Colombia",
         "Peru",
+        "Jamaica",
+        "Hawaii",
         "Guatemala",
-        "Columbia"
+        "Kenya",
+        "Ethiopia",
+        "Yemen"
+        
     ];
+    
+    
     
     var selectedRow = "";
     
@@ -50,8 +59,8 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
             let text = tableContent[indexPath.row];
             selectedRow = text;
             
-            cell.textLabel?.text = text;
-            cell.textLabel?.textColor = UIColor.whiteColor();
+            cell.textLabel.text = text;
+            cell.textLabel.textColor = UIColor.whiteColor();
             cell.backgroundColor = UIColor.clearColor();
             
             return cell;
