@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class CountryViewController: UIViewController {
 
     var value:String!
@@ -24,7 +25,7 @@ class CountryViewController: UIViewController {
         
         countryName.text = value;
 
-        countryImage.image = UIImage(named: value);
+        countryImage.image = UIImage(named: "Brazil");
         
         countryDescription.text = value;
         
@@ -79,15 +80,25 @@ class CountryViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBarHidden = false;
     }
+    
+    
+    
+    @IBAction func orderButtonClickAction(sender: AnyObject) {
+        
+        self.performSegueWithIdentifier("COUNTRY-TO-WEBVIEW", sender: self);
+    }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        var webViewController = (segue.destinationViewController as WebView);
+        webViewController.countryName = value;
     }
-    */
+    
 
 }

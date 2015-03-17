@@ -36,6 +36,22 @@ class PageItemController: UIViewController {
     }
     
 
+    @IBAction func pinchZoomHandler(recognizer: UIPinchGestureRecognizer) {
+        
+            recognizer.view!.transform = CGAffineTransformScale(recognizer.view!.transform,
+                recognizer.scale, recognizer.scale)
+            recognizer.scale = 1
+        
+    }
+    
+    
+    
+    @IBAction func panZoomHandler(recognizer:UIPanGestureRecognizer) {
+        let translation = recognizer.translationInView(self.view)
+        recognizer.view!.center = CGPoint(x:recognizer.view!.center.x + translation.x,
+            y:recognizer.view!.center.y + translation.y)
+        recognizer.setTranslation(CGPointZero, inView: self.view)
+    }
     /*
     // MARK: - Navigation
 

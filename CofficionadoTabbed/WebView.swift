@@ -10,23 +10,37 @@ import UIKit
 
 
 class WebView: UIViewController , UIWebViewDelegate{
+    
+    
+    var countryName:String! // contains the name of country from previous screen
 
     
       @IBOutlet var WebView: UIWebView!
       @IBOutlet var activicityIndicator: UIActivityIndicatorView!
     
-    override func viewDidLoad() {
+        override func viewDidLoad() {
         super.viewDidLoad()
         
-       // *********************  webview **********************//
-        var URL = NSURL(string: "http://www.mttamcoffeecompany.com/shop/")  // Need to replace xxxx value
+       // *********************  Loading webview with URL **********************//
+        //sample URl = http://www.mttamcoffeecompany.com/shop/Brazil
+            
+        let baseURL = "http://www.mttamcoffeecompany.com/shop/"
+        var urlString = baseURL + countryName;
+        print(urlString)
+        var URL = NSURL(string: urlString)  // Need to replace xxxx value
         WebView.delegate=self;
         WebView.loadRequest(NSURLRequest(URL:URL!))
-        
-        
-        
       
     }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    
+    //MARK: UIWebview Delegates
     
     //------- delegate method webview start loading
     func webViewDidStartLoad(webView : UIWebView) {
@@ -34,6 +48,7 @@ class WebView: UIViewController , UIWebViewDelegate{
         activicityIndicator.hidden=false;
         activicityIndicator.startAnimating();
     }
+    
     
     // ------- delegate method webview end loading
 
@@ -44,10 +59,7 @@ class WebView: UIViewController , UIWebViewDelegate{
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  
     
 
     /*

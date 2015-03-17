@@ -60,6 +60,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
             selectedRow = text;
             
            cell.textLabel?.text = text;
+            cell.textLabel?.font = UIFont (name: "Gill Sans", size: 20)
             cell.textLabel?.textColor = UIColor.whiteColor();
             cell.backgroundColor = UIColor.clearColor();
             
