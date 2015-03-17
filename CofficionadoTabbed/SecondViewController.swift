@@ -59,8 +59,8 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
             let text = tableContent[indexPath.row];
             selectedRow = text;
             
-            cell.textLabel.text = text;
-            cell.textLabel.textColor = UIColor.whiteColor();
+           cell.textLabel?.text = text;
+            cell.textLabel?.textColor = UIColor.whiteColor();
             cell.backgroundColor = UIColor.clearColor();
             
             return cell;
@@ -71,6 +71,8 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         self.performSegueWithIdentifier("CountryViewController", sender:self)
         return;
     }
+    
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var countryViewController = (segue.destinationViewController as CountryViewController);

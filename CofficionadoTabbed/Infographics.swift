@@ -15,8 +15,9 @@ class Infographics: UIViewController,UIPageViewControllerDataSource {
     
     // Initialize it right away here
     private let contentImages = ["infographic1.jpg",
-        "infographic3.jpg",
-        "infographic3.jpg"];
+        "pourover.jpg",
+        "brewing_methods.jpg",
+    "infographic3.jpg"];
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {

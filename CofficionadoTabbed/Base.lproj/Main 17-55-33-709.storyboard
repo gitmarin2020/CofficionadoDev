@@ -74,9 +74,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Coffees" image="coffee@2x.png" id="acW-dT-cKf"/>
                     <navigationItem key="navigationItem" title="Coffees" id="SRV-i1-eQw"/>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="tableCountries" destination="4sh-6j-xST" id="Iik-Ka-2QY"/>
                         <segue destination="MKh-aa-B4J" kind="push" identifier="CountryViewController" id="ai3-2l-bvQ"/>
@@ -141,6 +140,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Country" id="mEG-lI-IhS"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="countryDescription" destination="UPP-qz-sB7" id="uXl-rw-P41"/>
                         <outlet property="countryImage" destination="DSq-fa-8Fo" id="0v7-V1-69b"/>
@@ -151,7 +152,7 @@
             </objects>
             <point key="canvasLocation" x="1265.25" y="-318.5"/>
         </scene>
-        <!--Item-->
+        <!--Did you know?-->
         <scene sceneID="1hq-17-oGH">
             <objects>
                 <viewController id="W6s-7v-4O2" customClass="Infographics" customModule="CofficionadoTabbed" customModuleProvider="target" sceneMemberID="viewController">
@@ -163,7 +164,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="item.png" id="yOe-K4-Gox"/>
+                    <tabBarItem key="tabBarItem" title="Did you know?" image="item.png" id="yOe-K4-Gox"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpg-nb-RFW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -178,10 +179,10 @@
             </objects>
             <point key="canvasLocation" x="630" y="1240"/>
         </scene>
-        <!--Page Item Controller-->
+        <!--DidYouKnow-->
         <scene sceneID="uz7-ju-NPP">
             <objects>
-                <viewController storyboardIdentifier="ItemController" id="3WJ-Dg-9Yi" customClass="PageItemController" customModule="CofficionadoTabbed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ItemController" title="DidYouKnow" modalPresentationStyle="overFullScreen" id="3WJ-Dg-9Yi" customClass="PageItemController" customModule="CofficionadoTabbed" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Kaw-mI-ner"/>
                         <viewControllerLayoutGuide type="bottom" id="fAT-6W-tuk"/>
@@ -190,31 +191,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MwH-f3-D5i">
-                                <rect key="frame" x="33" y="56" width="504" height="464"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="550" id="4Vq-3G-wb1"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="4Vq-3G-wb1"/>
-                                    </mask>
-                                </variation>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MwH-f3-D5i">
+                                <rect key="frame" x="0.0" y="143" width="600" height="412"/>
                             </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="MwH-f3-D5i" firstAttribute="leading" secondItem="B3g-ne-fCs" secondAttribute="leading" constant="10" id="CwB-2b-hK9"/>
-                            <constraint firstItem="fAT-6W-tuk" firstAttribute="top" secondItem="MwH-f3-D5i" secondAttribute="bottom" constant="40" id="M8r-Bm-p0k"/>
-                            <constraint firstAttribute="centerY" secondItem="MwH-f3-D5i" secondAttribute="centerY" constant="10" id="kW8-ta-oFo"/>
-                            <constraint firstAttribute="trailing" secondItem="MwH-f3-D5i" secondAttribute="trailing" constant="10" id="om2-2V-vfk"/>
-                            <constraint firstItem="MwH-f3-D5i" firstAttribute="top" secondItem="Kaw-mI-ner" secondAttribute="bottom" constant="10" id="zvW-LS-2uC"/>
+                            <constraint firstItem="MwH-f3-D5i" firstAttribute="height" secondItem="B3g-ne-fCs" secondAttribute="height" id="0GW-XL-luB"/>
+                            <constraint firstItem="MwH-f3-D5i" firstAttribute="width" secondItem="B3g-ne-fCs" secondAttribute="width" id="ut0-RP-p2r"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="kW8-ta-oFo"/>
-                            </mask>
-                        </variation>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="contentImageView" destination="MwH-f3-D5i" id="buI-gp-0yZ"/>
                     </connections>
@@ -301,7 +287,7 @@
         <!--Style-->
         <scene sceneID="a38-PL-LeK">
             <objects>
-                <viewController id="9Uh-H2-fQ8" customClass="StyleViewController" customModule="CofficionadoTabbed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Style" id="9Uh-H2-fQ8" customClass="StyleViewController" customModule="CofficionadoTabbed" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="T68-Yi-T1t"/>
                         <viewControllerLayoutGuide type="bottom" id="7Fo-0y-Tj3"/>
@@ -396,10 +382,10 @@
             </objects>
             <point key="canvasLocation" x="1258.5" y="470.5"/>
         </scene>
-        <!--Web View-->
+        <!--WebView-->
         <scene sceneID="3HV-aZ-cvR">
             <objects>
-                <viewController id="oo9-A5-ZNY" customClass="WebView" customModule="CofficionadoTabbed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="WebView" id="oo9-A5-ZNY" customClass="WebView" customModule="CofficionadoTabbed" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WA5-uf-Uhx"/>
                         <viewControllerLayoutGuide type="bottom" id="BFf-Ob-E42"/>
@@ -408,7 +394,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O9a-n0-Pyr">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O9a-n0-Pyr">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -421,6 +407,12 @@
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="O9a-n0-Pyr" secondAttribute="centerX" id="E7v-Cm-Ryh"/>
+                            <constraint firstAttribute="centerY" secondItem="O9a-n0-Pyr" secondAttribute="centerY" id="fOP-1k-hPy"/>
+                            <constraint firstItem="O9a-n0-Pyr" firstAttribute="width" secondItem="nUF-ae-Glm" secondAttribute="width" id="lGM-Wa-5VO"/>
+                            <constraint firstItem="O9a-n0-Pyr" firstAttribute="height" secondItem="nUF-ae-Glm" secondAttribute="height" id="mf1-st-nqX"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EkI-59-V1C"/>
                     <connections>
@@ -487,13 +479,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D5j-Pr-sWH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1940" y="504"/>
+            <point key="canvasLocation" x="2027" y="552"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="e7G-3y-A5S">
             <objects>
                 <navigationController id="tX5-7Q-rUA" sceneMemberID="viewController">
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xop-3V-64w">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -535,11 +526,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="coffee@2x.png" width="90" height="90"/>
+        <image name="coffee@2x.png" width="640" height="1138"/>
         <image name="item.png" width="30" height="30"/>
         <image name="style.png" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="b8q-5i-fG7"/>
+        <segue reference="HI4-2D-laz"/>
     </inferredMetricsTieBreakers>
 </document>

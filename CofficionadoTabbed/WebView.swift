@@ -19,7 +19,7 @@ class WebView: UIViewController , UIWebViewDelegate{
         super.viewDidLoad()
         
        // *********************  webview **********************//
-        var URL = NSURL(string: "http://www.mttamcoffeecompany.com/shop/xxxx")  // Need to replace xxxx value
+        var URL = NSURL(string: "http://www.mttamcoffeecompany.com/shop/")  // Need to replace xxxx value
         WebView.delegate=self;
         WebView.loadRequest(NSURLRequest(URL:URL!))
         
