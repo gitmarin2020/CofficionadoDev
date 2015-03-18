@@ -13,10 +13,13 @@ class CountryViewController: UIViewController {
 
     var value:String!
     
+    
     @IBOutlet weak var countryImage: UIImageView!
     
     @IBOutlet weak var countryDescription: UITextView!
  
+   
+
     
     @IBOutlet weak var countryName: UILabel!
     
@@ -24,7 +27,7 @@ class CountryViewController: UIViewController {
         super.viewDidLoad()
         
         countryName.text = value;
-
+        
         countryImage.image = UIImage(named: "Brazil");
         
         countryDescription.text = value;
@@ -33,9 +36,7 @@ class CountryViewController: UIViewController {
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg1")!);
         
         switch(value){
-        case "Papua New Guinea":
-            countryDescription.text =
-            "Papua New Guinea is often lumped in with Indonesian coffees. But it is distinct in nearly every way. Papua New Guinea occupies the eastern half of the island it shares with Irian Jaya, which produces only a token amount of coffee itself. Its a world away from Java or Sumatra, geographically, culturally, and in most aspects of coffee production. The multitudinous ethnic groups of PNG share nothing in common with the Bahasa or Batak or Gayo peoples, or the many other Indonesian groups. And the coffee is not wet-hulled as many Indonesia coffees are; they are wet-processed, which might sound similar in name but is remarkably different in terms of the resulting cup flavors."
+                   
         case "Brazil":
             countryDescription.text =
             "Coffee production in Brazil is responsible for about a third of all coffee, making Brazil by far the world's largest producer, a position the country has held for the last 150 years. Coffee plantations, covering some 27,000 km2 (10,000 sq mi), are mainly located in the southeastern states of Minas Gerais, São Paulo and Paraná where the environment and climate provide ideal growing conditions."
