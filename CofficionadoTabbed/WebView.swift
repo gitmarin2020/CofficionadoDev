@@ -13,7 +13,8 @@ class WebView: UIViewController , UIWebViewDelegate{
     
     
     var countryName:String! // contains the name of country from previous screen
-
+    
+    
     
       @IBOutlet var WebView: UIWebView!
       @IBOutlet var activicityIndicator: UIActivityIndicatorView!
@@ -25,7 +26,7 @@ class WebView: UIViewController , UIWebViewDelegate{
         //sample URl = http://www.mttamcoffeecompany.com/shop/Brazil
             
         let baseURL = "http://www.mttamcoffeecompany.com/shop/"
-        var urlString = baseURL + countryName;
+        var urlString = baseURL + countryName.lowercaseString;
         print(urlString)
         var URL = NSURL(string: urlString)  // Need to replace xxxx value
         WebView.delegate=self;

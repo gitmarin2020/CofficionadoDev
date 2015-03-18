@@ -13,14 +13,13 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var tableCountries: UITableView!
     
     let tableContent = [
-        "Papua New Guinea",
+        
         "Brazil",
         "Sumatra",
         "Nicaragua",
         "Mexico",
         "Colombia",
         "Peru",
-        "Jamaica",
         "Hawaii",
         "Guatemala",
         "Kenya",
