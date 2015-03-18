@@ -28,6 +28,10 @@ class StyleViewController: UIViewController {
         // SET BACKGROUND
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg1")!);
         
+       //adding button on top bar
+        self.customiseNavigationBar()
+        
+        
         switch(value){
             case "The Americano":
                 descriptionText.text = "The first Americano coffee is thought to have come from the battlefield of World War II. American GIs in Europe tried to make a coffee similar to the one they were accustomed to by diluting it with hot water. Later on the coffee became popular in the US. An Americano coffee is a shot of Espresso coffee infused with hot water. The ratio of water to Espresso is 1:1 (equal amounts).  An Americano coffee is as intensive as drip coffee, but has a different flavour.";
@@ -105,10 +109,55 @@ class StyleViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-  
+    func sayHello(sender: UIBarButtonItem) {
+        
+        
+    }
+    
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBarHidden = false
+    }
+    
+    
+    
+    /**
+    This method add the button on navigation bar (Share and Favourite)
+    */
+    
+    func customiseNavigationBar()
+    {
+        //Design for favourite button
+        let starButton   = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
+        starButton.frame = CGRectMake(0, 0, 23, 23)
+        starButton.backgroundColor = UIColor.clearColor()
+        starButton.setImage(UIImage(named: "fav.png"), forState: UIControlState.Normal)
+        starButton.addTarget(self, action: "favouriteButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
+        
+        
+        //Design for share button
+        let shareButton   = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
+        shareButton.frame = CGRectMake(0, 0, 23, 23)
+        shareButton.backgroundColor = UIColor.clearColor()
+        shareButton.setImage(UIImage(named: "share.png"), forState: UIControlState.Normal)
+        shareButton.addTarget(self, action: "shareButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
+        
+        
+        //Design for back button
+        let backButton   = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
+        backButton.frame = CGRectMake(0, 0, 23, 23)
+        backButton.backgroundColor = UIColor.clearColor()
+        backButton.setImage(UIImage(named: "back.png"), forState: UIControlState.Normal)
+        backButton.addTarget(self, action: "backButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
+        
+        
+        
+        var shareBarButton = UIBarButtonItem(customView: shareButton)
+        var backBarButton = UIBarButtonItem(customView: backButton)
+        self.navigationItem.titleView = starButton
+        self.navigationItem.rightBarButtonItem = shareBarButton
+        self.navigationItem.leftBarButtonItem = backBarButton
+
     }
 
     /*
