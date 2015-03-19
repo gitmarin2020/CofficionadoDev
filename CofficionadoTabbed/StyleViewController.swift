@@ -29,7 +29,6 @@ class StyleViewController: UIViewController {
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg1")!);
         
        //adding button on top bar
-        self.customiseNavigationBar()
         
         
         switch(value){
@@ -99,9 +98,20 @@ class StyleViewController: UIViewController {
     
     @IBAction func orderBtnAction(sender: UIButton) {
         
-//    self.navigationController!.pushViewController(self.storyboard!.instantiateViewControllerWithIdentifier("WebView") as WebViewViewController, animated: true)
+        self.performSegueWithIdentifier("ORDER_SEGUE", sender: self)
+        
+    
         
     }
+    
+    
+    
+    @IBAction func backButtonAction(sender: AnyObject) {
+        
+        self.navigationController?.popViewControllerAnimated(true)
+
+    }
+    
     
     
     override func didReceiveMemoryWarning() {
@@ -109,65 +119,33 @@ class StyleViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func sayHello(sender: UIBarButtonItem) {
-        
-        
+   
+    @IBAction func reviewButtonAction(sender: AnyObject) {
+    }
+    
+    
+    @IBAction func shareButtonAction(sender: AnyObject) {
     }
     
     
     override func viewWillAppear(animated: Bool) {
-        self.navigationController?.navigationBarHidden = false
+        self.navigationController?.navigationBarHidden = true
     }
     
     
     
-    /**
-    This method add the button on navigation bar (Share and Favourite)
-    */
     
-    func customiseNavigationBar()
-    {
-        //Design for favourite button
-        let starButton   = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
-        starButton.frame = CGRectMake(0, 0, 23, 23)
-        starButton.backgroundColor = UIColor.clearColor()
-        starButton.setImage(UIImage(named: "fav.png"), forState: UIControlState.Normal)
-        starButton.addTarget(self, action: "favouriteButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
-        
-        
-        //Design for share button
-        let shareButton   = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
-        shareButton.frame = CGRectMake(0, 0, 23, 23)
-        shareButton.backgroundColor = UIColor.clearColor()
-        shareButton.setImage(UIImage(named: "share.png"), forState: UIControlState.Normal)
-        shareButton.addTarget(self, action: "shareButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
-        
-        
-        //Design for back button
-        let backButton   = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
-        backButton.frame = CGRectMake(0, 0, 23, 23)
-        backButton.backgroundColor = UIColor.clearColor()
-        backButton.setImage(UIImage(named: "back.png"), forState: UIControlState.Normal)
-        backButton.addTarget(self, action: "backButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
-        
-        
-        
-        var shareBarButton = UIBarButtonItem(customView: shareButton)
-        var backBarButton = UIBarButtonItem(customView: backButton)
-        self.navigationItem.titleView = starButton
-        self.navigationItem.rightBarButtonItem = shareBarButton
-        self.navigationItem.leftBarButtonItem = backBarButton
-
-    }
-
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        var webViewController = (segue.destinationViewController as WebView);
+        webViewController.countryName = value;
     }
-    */
+    
 
 }

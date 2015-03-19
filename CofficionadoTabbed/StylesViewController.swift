@@ -1,15 +1,15 @@
 //
-//  FirstViewController.swift
+//  StylesViewController.swift
 //  CofficionadoTabbed
 //
-//  Created by Matt Oguz on 2/27/15.
+//  Created by Shahrukh on 19/03/15.
 //  Copyright (c) 2015 VentureScience. All rights reserved.
 //
 
 import UIKit
 
-class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+class StylesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
     @IBOutlet weak var tableStyles: UITableView!
     
     var styles = [
@@ -52,8 +52,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // SET BACKGROUND
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg1")!);
         
-        self.customiseNavigationBar()
-    
+        
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -93,56 +92,28 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         styleViewController.value = selectedRow;
     }
     
+    
+    
+    @IBAction func reviewButtonAction(sender: AnyObject) {
+    }
+    
+    
+    
+    @IBAction func shareButtonAction(sender: AnyObject) {
+    }
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     
-    /**
-    This method add the button on navigation bar (Share and Favourite)
-    */
     
-    func customiseNavigationBar()
-    {
-        //Design for favourite button
-        let starButton   = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
-        starButton.frame = CGRectMake(0, 0, 23, 23)
-        starButton.backgroundColor = UIColor.clearColor()
-        starButton.setImage(UIImage(named: "fav.png"), forState: UIControlState.Normal)
-        starButton.addTarget(self, action: "favouriteButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
-        
-        
-        //Design for share button
-        let shareButton   = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
-        shareButton.frame = CGRectMake(0, 0, 23, 23)
-        shareButton.backgroundColor = UIColor.clearColor()
-        shareButton.setImage(UIImage(named: "share.png"), forState: UIControlState.Normal)
-        shareButton.addTarget(self, action: "shareButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
-        
-        
-        //Design for back button
-        let backButton   = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
-        backButton.frame = CGRectMake(0, 0, 23, 23)
-        backButton.backgroundColor = UIColor.clearColor()
-        backButton.setImage(UIImage(named: "back.png"), forState: UIControlState.Normal)
-        backButton.addTarget(self, action: "backButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
-        
-        
-        
-        var shareBarButton = UIBarButtonItem(customView: shareButton)
-        var backBarButton = UIBarButtonItem(customView: backButton)
-        self.navigationItem.titleView = starButton
-        self.navigationItem.rightBarButtonItem = shareBarButton
-        self.navigationItem.leftBarButtonItem = backBarButton
-        
-    }
-
     
     override func viewWillAppear(animated: Bool) {
-        self.navigationController?.navigationBarHidden = false
+        self.navigationController?.navigationBarHidden = true
     }
 
-
 }
-

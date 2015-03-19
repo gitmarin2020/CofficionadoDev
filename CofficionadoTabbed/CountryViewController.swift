@@ -26,7 +26,6 @@ class CountryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.customiseNavigationBar()
         
         countryName.text = value;
         
@@ -92,46 +91,19 @@ class CountryViewController: UIViewController {
     }
     
     
-    /**
-    This method add the button on navigation bar (Share and Favourite)
-    */
-    
-    func customiseNavigationBar()
-    {
-        //Design for favourite button
-        let starButton   = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
-        starButton.frame = CGRectMake(0, 0, 23, 23)
-        starButton.backgroundColor = UIColor.clearColor()
-        starButton.setImage(UIImage(named: "fav.png"), forState: UIControlState.Normal)
-        starButton.addTarget(self, action: "favouriteButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
+    @IBAction func backButtonAction(sender: AnyObject) {
         
-        
-        //Design for share button
-        let shareButton   = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
-        shareButton.frame = CGRectMake(0, 0, 23, 23)
-        shareButton.backgroundColor = UIColor.clearColor()
-        shareButton.setImage(UIImage(named: "share.png"), forState: UIControlState.Normal)
-        shareButton.addTarget(self, action: "shareButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
-        
-        
-        //Design for back button
-        let backButton   = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
-        backButton.frame = CGRectMake(0, 0, 23, 23)
-        backButton.backgroundColor = UIColor.clearColor()
-        backButton.setImage(UIImage(named: "back.png"), forState: UIControlState.Normal)
-        backButton.addTarget(self, action: "backButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
-        
-        
-        
-        var shareBarButton = UIBarButtonItem(customView: shareButton)
-        var backBarButton = UIBarButtonItem(customView: backButton)
-        self.navigationItem.titleView = starButton
-        self.navigationItem.rightBarButtonItem = shareBarButton
-        self.navigationItem.leftBarButtonItem = backBarButton
-        
+        self.navigationController?.popViewControllerAnimated(true)
     }
-
-
+   
+    @IBAction func reviewButtonAction(sender: AnyObject) {
+    }
+    
+    
+    
+    @IBAction func shareButtonAction(sender: AnyObject) {
+    }
+    
     
     // MARK: - Navigation
 
