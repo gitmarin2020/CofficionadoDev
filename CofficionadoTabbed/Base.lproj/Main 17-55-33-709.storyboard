@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tX5-7Q-rUA">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -370,6 +371,35 @@
             </objects>
             <point key="canvasLocation" x="1329" y="1225"/>
         </scene>
+        <!--Coffee Detail View Controller-->
+        <scene sceneID="oBv-r9-WMO">
+            <objects>
+                <viewController id="wCE-yh-DaO" customClass="CoffeeDetailViewController" customModule="CofficionadoTabbed" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2GB-vp-iD8"/>
+                        <viewControllerLayoutGuide type="bottom" id="AiO-GW-k6r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ChL-9V-JbY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jgq-G9-4PK">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jgq-G9-4PK" firstAttribute="top" secondItem="ChL-9V-JbY" secondAttribute="top" id="0jQ-IS-ir8"/>
+                            <constraint firstItem="AiO-GW-k6r" firstAttribute="top" secondItem="jgq-G9-4PK" secondAttribute="bottom" id="FH9-xk-90k"/>
+                            <constraint firstItem="jgq-G9-4PK" firstAttribute="leading" secondItem="ChL-9V-JbY" secondAttribute="leading" id="LVk-fG-VOM"/>
+                            <constraint firstAttribute="trailing" secondItem="jgq-G9-4PK" secondAttribute="trailing" id="x12-nd-COg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hF1-YR-dsI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2248" y="2189"/>
+        </scene>
         <!--Styles-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
@@ -669,7 +699,7 @@
                                 <rect key="frame" x="50" y="120" width="500" height="380"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSf-P9-pZu">
-                                        <rect key="frame" x="190" y="250" width="120" height="30"/>
+                                        <rect key="frame" x="190" y="290" width="120" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="1oG-fa-diZ"/>
                                             <constraint firstAttribute="width" constant="120" id="2XA-zp-nuD"/>
@@ -706,11 +736,11 @@
                                     <constraint firstItem="ldH-1T-ofR" firstAttribute="top" secondItem="fGi-ut-ufs" secondAttribute="top" constant="30" id="JLT-75-jBK"/>
                                     <constraint firstAttribute="centerX" secondItem="ldH-1T-ofR" secondAttribute="centerX" id="YQ4-FN-yZZ"/>
                                     <constraint firstAttribute="centerX" secondItem="dZh-Cc-SUn" secondAttribute="centerX" id="szW-E0-ZHL"/>
-                                    <constraint firstAttribute="bottom" secondItem="eSf-P9-pZu" secondAttribute="bottom" constant="100" id="yvk-34-qmd"/>
+                                    <constraint firstAttribute="bottom" secondItem="eSf-P9-pZu" secondAttribute="bottom" constant="60" id="yvk-34-qmd"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLk-59-1Mm">
-                                <rect key="frame" x="530" y="110" width="30" height="30"/>
+                                <rect key="frame" x="515" y="125" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="G1N-5f-ZQm"/>
                                     <constraint firstAttribute="height" constant="30" id="ggW-Pd-E7q"/>
@@ -728,9 +758,9 @@
                             <constraint firstItem="qyx-WM-xa0" firstAttribute="top" secondItem="VMA-7Q-Loe" secondAttribute="bottom" id="45T-FE-8Te"/>
                             <constraint firstItem="fGi-ut-ufs" firstAttribute="leading" secondItem="70W-Ka-ooA" secondAttribute="leading" constant="50" id="7ov-Xt-h83"/>
                             <constraint firstItem="qyx-WM-xa0" firstAttribute="top" secondItem="fGi-ut-ufs" secondAttribute="bottom" constant="100" id="Ckx-za-Gko"/>
-                            <constraint firstItem="fGi-ut-ufs" firstAttribute="top" secondItem="LLk-59-1Mm" secondAttribute="bottom" constant="-20" id="Dwu-EX-rYS"/>
+                            <constraint firstItem="fGi-ut-ufs" firstAttribute="top" secondItem="LLk-59-1Mm" secondAttribute="bottom" constant="-35" id="Dwu-EX-rYS"/>
                             <constraint firstItem="VMA-7Q-Loe" firstAttribute="leading" secondItem="70W-Ka-ooA" secondAttribute="leading" id="LtN-bh-iOj"/>
-                            <constraint firstItem="LLk-59-1Mm" firstAttribute="leading" secondItem="fGi-ut-ufs" secondAttribute="trailing" constant="-20" id="UL1-nf-8Wj"/>
+                            <constraint firstItem="LLk-59-1Mm" firstAttribute="leading" secondItem="fGi-ut-ufs" secondAttribute="trailing" constant="-35" id="UL1-nf-8Wj"/>
                             <constraint firstItem="fGi-ut-ufs" firstAttribute="top" secondItem="Nas-Pb-r7R" secondAttribute="bottom" constant="100" id="YIm-Xd-CHj"/>
                             <constraint firstItem="VMA-7Q-Loe" firstAttribute="top" secondItem="Nas-Pb-r7R" secondAttribute="bottom" id="gJQ-Wv-hzO"/>
                             <constraint firstAttribute="trailing" secondItem="VMA-7Q-Loe" secondAttribute="trailing" id="u0O-4E-PkU"/>

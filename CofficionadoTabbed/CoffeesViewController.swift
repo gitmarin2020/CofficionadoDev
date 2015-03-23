@@ -98,7 +98,7 @@ class CoffeesViewController: UIViewController, UITableViewDataSource, UITableVie
         
         let textToShare = "I learned so much about coffee thanks to grate app you should try it too !"
         
-        if let myWebsite = NSURL(string: "Application link here ")
+        if let myWebsite = NSURL(string: "www.appliationURLhere.com")
         {
             let objectsToShare = [textToShare, myWebsite]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)

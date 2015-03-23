@@ -10,6 +10,7 @@
 		008C60AF1AC039F700C6715E /* ReviewAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008C60AD1AC039F700C6715E /* ReviewAppViewController.swift */; };
 		008C60B21AC03D3400C6715E /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 008C60B11AC03D3400C6715E /* heart.png */; };
 		008C60B41AC0421400C6715E /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 008C60B31AC0421400C6715E /* cross.png */; };
+		008C60B61AC059C200C6715E /* CoffeeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008C60B51AC059C200C6715E /* CoffeeDetailViewController.swift */; };
 		277975E01AB6EDE000DE204E /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277975DF1AB6EDE000DE204E /* WebView.swift */; };
 		27BAB3521AB7000700D9B60C /* style_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 27BAB3461AB7000700D9B60C /* style_active.png */; };
 		27BAB3531AB7000700D9B60C /* style_active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27BAB3471AB7000700D9B60C /* style_active@2x.png */; };
@@ -36,7 +37,6 @@
 		E8A025631AB6100000A294D1 /* Iced-Coffee-cup.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8A0255D1AB6100000A294D1 /* Iced-Coffee-cup.jpg */; };
 		E8A025641AB6100000A294D1 /* portugal_galao_cup.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8A0255E1AB6100000A294D1 /* portugal_galao_cup.jpg */; };
 		E8CE5CB81AA1194C00D8AF5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CE5CB71AA1194C00D8AF5A /* AppDelegate.swift */; };
-		E8CE5CD01AA1194C00D8AF5A /* CofficionadoTabbedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CE5CCF1AA1194C00D8AF5A /* CofficionadoTabbedTests.swift */; };
 		E8CE5CEB1AA126A300D8AF5A /* Coffees.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CE5CEA1AA126A300D8AF5A /* Coffees.swift */; };
 		E8D93D771AB4B1DB001D47A5 /* infographic1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8D93D761AB4B1DB001D47A5 /* infographic1.jpg */; };
 		E8D93D7B1AB4B83C001D47A5 /* Infographics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D93D7A1AB4B83C001D47A5 /* Infographics.swift */; };
@@ -68,20 +68,11 @@
 		EE2B43C01AB9A092003C5BA2 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE2B43BE1AB9A092003C5BA2 /* back@2x.png */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		E8CE5CCA1AA1194C00D8AF5A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E8CE5CAA1AA1194C00D8AF5A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E8CE5CB11AA1194C00D8AF5A;
-			remoteInfo = CofficionadoTabbed;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		008C60AD1AC039F700C6715E /* ReviewAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewAppViewController.swift; sourceTree = "<group>"; };
 		008C60B11AC03D3400C6715E /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
 		008C60B31AC0421400C6715E /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
+		008C60B51AC059C200C6715E /* CoffeeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeDetailViewController.swift; sourceTree = "<group>"; };
 		277975DF1AB6EDE000DE204E /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		27BAB3461AB7000700D9B60C /* style_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = style_active.png; sourceTree = "<group>"; };
 		27BAB3471AB7000700D9B60C /* style_active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "style_active@2x.png"; sourceTree = "<group>"; };
@@ -110,7 +101,6 @@
 		E8CE5CB21AA1194C00D8AF5A /* CofficionadoTabbed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CofficionadoTabbed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8CE5CB61AA1194C00D8AF5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8CE5CB71AA1194C00D8AF5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E8CE5CC91AA1194C00D8AF5A /* CofficionadoTabbedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CofficionadoTabbedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8CE5CCE1AA1194C00D8AF5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8CE5CCF1AA1194C00D8AF5A /* CofficionadoTabbedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CofficionadoTabbedTests.swift; sourceTree = "<group>"; };
 		E8CE5CEA1AA126A300D8AF5A /* Coffees.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Coffees.swift; path = ../Coffees.swift; sourceTree = "<group>"; };
@@ -152,13 +142,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E8CE5CC61AA1194C00D8AF5A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -179,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				E8CE5CB21AA1194C00D8AF5A /* CofficionadoTabbed.app */,
-				E8CE5CC91AA1194C00D8AF5A /* CofficionadoTabbedTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,6 +174,7 @@
 				EE0A61B71ABACD2600E365A4 /* CoffeesViewController.swift */,
 				EE0A61B91ABACDD500E365A4 /* StylesViewController.swift */,
 				EE0A61BB1ABACFC400E365A4 /* DidYouKnowViewController.swift */,
+				008C60B51AC059C200C6715E /* CoffeeDetailViewController.swift */,
 				277975DF1AB6EDE000DE204E /* WebView.swift */,
 				97F4053E1AA6DD580091AA50 /* CountryViewController.swift */,
 				97AB06151AA95C6B008AFF10 /* StyleViewController.swift */,
@@ -316,24 +299,6 @@
 			productReference = E8CE5CB21AA1194C00D8AF5A /* CofficionadoTabbed.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E8CE5CC81AA1194C00D8AF5A /* CofficionadoTabbedTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E8CE5CD61AA1194C00D8AF5A /* Build configuration list for PBXNativeTarget "CofficionadoTabbedTests" */;
-			buildPhases = (
-				E8CE5CC51AA1194C00D8AF5A /* Sources */,
-				E8CE5CC61AA1194C00D8AF5A /* Frameworks */,
-				E8CE5CC71AA1194C00D8AF5A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E8CE5CCB1AA1194C00D8AF5A /* PBXTargetDependency */,
-			);
-			name = CofficionadoTabbedTests;
-			productName = CofficionadoTabbedTests;
-			productReference = E8CE5CC91AA1194C00D8AF5A /* CofficionadoTabbedTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -352,11 +317,6 @@
 							};
 						};
 					};
-					E8CE5CC81AA1194C00D8AF5A = {
-						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = U3MSU49D8L;
-						TestTargetID = E8CE5CB11AA1194C00D8AF5A;
-					};
 				};
 			};
 			buildConfigurationList = E8CE5CAD1AA1194C00D8AF5A /* Build configuration list for PBXProject "CofficionadoTabbed" */;
@@ -373,7 +333,6 @@
 			projectRoot = "";
 			targets = (
 				E8CE5CB11AA1194C00D8AF5A /* CofficionadoTabbed */,
-				E8CE5CC81AA1194C00D8AF5A /* CofficionadoTabbedTests */,
 			);
 		};
 /* End PBXProject section */
@@ -433,13 +392,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E8CE5CC71AA1194C00D8AF5A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -457,27 +409,12 @@
 				E8CE5CB81AA1194C00D8AF5A /* AppDelegate.swift in Sources */,
 				97F4053F1AA6DD580091AA50 /* CountryViewController.swift in Sources */,
 				EE0A61BA1ABACDD500E365A4 /* StylesViewController.swift in Sources */,
+				008C60B61AC059C200C6715E /* CoffeeDetailViewController.swift in Sources */,
 				E8CE5CEB1AA126A300D8AF5A /* Coffees.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E8CE5CC51AA1194C00D8AF5A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E8CE5CD01AA1194C00D8AF5A /* CofficionadoTabbedTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E8CE5CCB1AA1194C00D8AF5A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E8CE5CB11AA1194C00D8AF5A /* CofficionadoTabbed */;
-			targetProxy = E8CE5CCA1AA1194C00D8AF5A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E8E5B5721AB662BD00D10DC3 /* Main 17-55-33-709.storyboard */ = {
@@ -508,7 +445,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nitin Gupta (6RCY6XK7T3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nitin Gupta (6RCY6XK7T3)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -528,6 +466,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "31ac125d-57cd-46ae-a598-d555c936123c";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -550,7 +489,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nitin Gupta (6RCY6XK7T3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nitin Gupta (6RCY6XK7T3)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -563,6 +503,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "31ac125d-57cd-46ae-a598-d555c936123c";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -572,13 +513,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nitin Gupta (6RCY6XK7T3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nitin Gupta (6RCY6XK7T3)";
 				INFOPLIST_FILE = CofficionadoTabbed/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "31ac125d-57cd-46ae-a598-d555c936123c";
 			};
 			name = Debug;
 		};
@@ -586,47 +527,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nitin Gupta (6RCY6XK7T3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nitin Gupta (6RCY6XK7T3)";
 				INFOPLIST_FILE = CofficionadoTabbed/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-			};
-			name = Release;
-		};
-		E8CE5CD71AA1194C00D8AF5A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CofficionadoTabbedTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CofficionadoTabbed.app/CofficionadoTabbed";
-			};
-			name = Debug;
-		};
-		E8CE5CD81AA1194C00D8AF5A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CofficionadoTabbedTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CofficionadoTabbed.app/CofficionadoTabbed";
+				PROVISIONING_PROFILE = "31ac125d-57cd-46ae-a598-d555c936123c";
 			};
 			name = Release;
 		};
@@ -647,15 +554,6 @@
 			buildConfigurations = (
 				E8CE5CD41AA1194C00D8AF5A /* Debug */,
 				E8CE5CD51AA1194C00D8AF5A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E8CE5CD61AA1194C00D8AF5A /* Build configuration list for PBXNativeTarget "CofficionadoTabbedTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E8CE5CD71AA1194C00D8AF5A /* Debug */,
-				E8CE5CD81AA1194C00D8AF5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

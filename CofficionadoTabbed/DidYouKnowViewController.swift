@@ -65,11 +65,18 @@ class DidYouKnowViewController: UIViewController, UITableViewDataSource, UITable
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         selectedRow = dataArray[indexPath.row];
-        //self.performSegueWithIdentifier("StyleViewController", sender:self)
-        return;
+       // self.performSegueWithIdentifier("Infographics", sender:self)
+       // return;
     }
 
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        
+     //   var webViewController = (segue.destinationViewController as Infographics);
+       
+    }
+
 
     @IBAction func revieeButtonAction(sender: AnyObject) {
         
@@ -85,7 +92,7 @@ class DidYouKnowViewController: UIViewController, UITableViewDataSource, UITable
         
         let textToShare = "I learned so much about coffee thanks to grate app you should try it too !"
         
-        if let myWebsite = NSURL(string: "Application link here ")
+        if let myWebsite = NSURL(string: "www.appliationURLhere.com")
         {
             let objectsToShare = [textToShare, myWebsite]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)

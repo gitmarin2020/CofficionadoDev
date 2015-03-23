@@ -16,10 +16,7 @@ class ReviewAppViewController: UIViewController {
 
     override func viewDidLoad() {
         
-        
-       // self.view.backgroudImage =
-      // self.view.backgroundColor = UIColor.clearColor()
-        
+      
         self.popUpView.layer.cornerRadius = 10;
         self.popUpView.layer.masksToBounds = true;
         
@@ -52,7 +49,7 @@ class ReviewAppViewController: UIViewController {
     
     @IBAction func reviewButtonAction(sender: AnyObject) {
         
-     UIApplication.sharedApplication().openURL(NSURL(string: "https://www.elance.com/php/collab/main/collab.php?bidid=69994741")!)
+     UIApplication.sharedApplication().openURL(NSURL(string: "https://www.google.com")!) // Application apstore URL needs to change here
     }
     /*
     // MARK: - Navigation
