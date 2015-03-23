@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tX5-7Q-rUA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tX5-7Q-rUA">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -650,6 +650,101 @@
             </objects>
             <point key="canvasLocation" x="1922" y="-128"/>
         </scene>
+        <!--Review App View Controller-->
+        <scene sceneID="T5m-Tv-1xw">
+            <objects>
+                <viewController storyboardIdentifier="REVIEW" id="dZA-uS-Iw9" customClass="ReviewAppViewController" customModule="CofficionadoTabbed" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nas-Pb-r7R"/>
+                        <viewControllerLayoutGuide type="bottom" id="qyx-WM-xa0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="RATE_THIS_APP" id="70W-Ka-ooA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VMA-7Q-Loe">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fGi-ut-ufs">
+                                <rect key="frame" x="50" y="120" width="500" height="380"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSf-P9-pZu">
+                                        <rect key="frame" x="190" y="250" width="120" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="1oG-fa-diZ"/>
+                                            <constraint firstAttribute="width" constant="120" id="2XA-zp-nuD"/>
+                                        </constraints>
+                                        <state key="normal" title="Write a review ?">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="reviewButtonAction:" destination="dZA-uS-Iw9" eventType="touchUpInside" id="gK5-vp-HtQ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Love this app ?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZh-Cc-SUn">
+                                        <rect key="frame" x="190" y="195" width="120" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="HDO-mK-176"/>
+                                            <constraint firstAttribute="height" constant="21" id="J8w-RM-HwF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="ldH-1T-ofR">
+                                        <rect key="frame" x="225" y="30" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="XuM-cB-TlD"/>
+                                            <constraint firstAttribute="height" constant="50" id="d1w-VK-7qL"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="eSf-P9-pZu" secondAttribute="centerX" id="9Jp-Db-23V"/>
+                                    <constraint firstAttribute="centerY" secondItem="dZh-Cc-SUn" secondAttribute="centerY" constant="-15.5" id="CK4-YM-bn1"/>
+                                    <constraint firstItem="ldH-1T-ofR" firstAttribute="top" secondItem="fGi-ut-ufs" secondAttribute="top" constant="30" id="JLT-75-jBK"/>
+                                    <constraint firstAttribute="centerX" secondItem="ldH-1T-ofR" secondAttribute="centerX" id="YQ4-FN-yZZ"/>
+                                    <constraint firstAttribute="centerX" secondItem="dZh-Cc-SUn" secondAttribute="centerX" id="szW-E0-ZHL"/>
+                                    <constraint firstAttribute="bottom" secondItem="eSf-P9-pZu" secondAttribute="bottom" constant="100" id="yvk-34-qmd"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLk-59-1Mm">
+                                <rect key="frame" x="530" y="110" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="G1N-5f-ZQm"/>
+                                    <constraint firstAttribute="height" constant="30" id="ggW-Pd-E7q"/>
+                                </constraints>
+                                <state key="normal" image="cross.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="CloseButtonAction:" destination="dZA-uS-Iw9" eventType="touchUpInside" id="VTx-3i-udL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qyx-WM-xa0" firstAttribute="top" secondItem="VMA-7Q-Loe" secondAttribute="bottom" id="45T-FE-8Te"/>
+                            <constraint firstItem="fGi-ut-ufs" firstAttribute="leading" secondItem="70W-Ka-ooA" secondAttribute="leading" constant="50" id="7ov-Xt-h83"/>
+                            <constraint firstItem="qyx-WM-xa0" firstAttribute="top" secondItem="fGi-ut-ufs" secondAttribute="bottom" constant="100" id="Ckx-za-Gko"/>
+                            <constraint firstItem="fGi-ut-ufs" firstAttribute="top" secondItem="LLk-59-1Mm" secondAttribute="bottom" constant="-20" id="Dwu-EX-rYS"/>
+                            <constraint firstItem="VMA-7Q-Loe" firstAttribute="leading" secondItem="70W-Ka-ooA" secondAttribute="leading" id="LtN-bh-iOj"/>
+                            <constraint firstItem="LLk-59-1Mm" firstAttribute="leading" secondItem="fGi-ut-ufs" secondAttribute="trailing" constant="-20" id="UL1-nf-8Wj"/>
+                            <constraint firstItem="fGi-ut-ufs" firstAttribute="top" secondItem="Nas-Pb-r7R" secondAttribute="bottom" constant="100" id="YIm-Xd-CHj"/>
+                            <constraint firstItem="VMA-7Q-Loe" firstAttribute="top" secondItem="Nas-Pb-r7R" secondAttribute="bottom" id="gJQ-Wv-hzO"/>
+                            <constraint firstAttribute="trailing" secondItem="VMA-7Q-Loe" secondAttribute="trailing" id="u0O-4E-PkU"/>
+                            <constraint firstAttribute="trailing" secondItem="fGi-ut-ufs" secondAttribute="trailing" constant="50" id="wvq-2H-GVC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="popUpView" destination="fGi-ut-ufs" id="qW6-er-tF5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nxh-82-sk1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2287" y="753"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="e7G-3y-A5S">
             <objects>
@@ -705,7 +800,9 @@
         <image name="back.png" width="12" height="23"/>
         <image name="cart.png" width="23" height="18"/>
         <image name="coffee.png" width="30" height="30"/>
+        <image name="cross.png" width="30" height="30"/>
         <image name="fav.png" width="23" height="22"/>
+        <image name="heart.png" width="30" height="30"/>
         <image name="item.png" width="30" height="30"/>
         <image name="share.png" width="21" height="18"/>
         <image name="style.png" width="30" height="30"/>

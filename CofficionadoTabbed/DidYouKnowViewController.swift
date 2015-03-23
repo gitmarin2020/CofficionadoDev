@@ -55,9 +55,9 @@ class DidYouKnowViewController: UIViewController, UITableViewDataSource, UITable
             var cell = UITableViewCell();
             let text = dataArray[indexPath.row];
            
-            cell.textLabel?.text = text;
-            cell.textLabel?.font = UIFont (name: "Gill Sans", size: 20)
-            cell.textLabel?.textColor = UIColor.whiteColor();
+            cell.textLabel.text = text;
+            cell.textLabel.font = UIFont (name: "Gill Sans", size: 20)
+            cell.textLabel.textColor = UIColor.whiteColor();
             cell.backgroundColor = UIColor.clearColor()
             
             return cell;
@@ -72,9 +72,30 @@ class DidYouKnowViewController: UIViewController, UITableViewDataSource, UITable
     
 
     @IBAction func revieeButtonAction(sender: AnyObject) {
+        
+        let storyboard = UIStoryboard(name: "Main 17-55-33-709", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("REVIEW") as ReviewAppViewController
+        self.presentViewController(vc, animated: true, completion: nil)
+        
+
     }
     
     @IBAction func shareButtonAction(sender: AnyObject) {
+        
+        
+        let textToShare = "I learned so much about coffee thanks to grate app you should try it too !"
+        
+        if let myWebsite = NSURL(string: "Application link here ")
+        {
+            let objectsToShare = [textToShare, myWebsite]
+            let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+            
+            //New Excluded Activities Code
+            activityVC.excludedActivityTypes = [UIActivityTypeAirDrop, UIActivityTypeAddToReadingList]
+            //
+            
+            self.presentViewController(activityVC, animated: true, completion: nil)
+        }
     }
     
     /*

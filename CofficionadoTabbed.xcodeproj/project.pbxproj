@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		008C60AF1AC039F700C6715E /* ReviewAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008C60AD1AC039F700C6715E /* ReviewAppViewController.swift */; };
+		008C60B21AC03D3400C6715E /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 008C60B11AC03D3400C6715E /* heart.png */; };
+		008C60B41AC0421400C6715E /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 008C60B31AC0421400C6715E /* cross.png */; };
 		277975E01AB6EDE000DE204E /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277975DF1AB6EDE000DE204E /* WebView.swift */; };
 		27BAB3521AB7000700D9B60C /* style_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 27BAB3461AB7000700D9B60C /* style_active.png */; };
 		27BAB3531AB7000700D9B60C /* style_active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27BAB3471AB7000700D9B60C /* style_active@2x.png */; };
@@ -76,6 +79,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		008C60AD1AC039F700C6715E /* ReviewAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewAppViewController.swift; sourceTree = "<group>"; };
+		008C60B11AC03D3400C6715E /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		008C60B31AC0421400C6715E /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
 		277975DF1AB6EDE000DE204E /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		27BAB3461AB7000700D9B60C /* style_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = style_active.png; sourceTree = "<group>"; };
 		27BAB3471AB7000700D9B60C /* style_active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "style_active@2x.png"; sourceTree = "<group>"; };
@@ -192,6 +198,7 @@
 				E8CE5CEA1AA126A300D8AF5A /* Coffees.swift */,
 				E8D93D7C1AB5F9E0001D47A5 /* PageItemController.swift */,
 				E8D93D7A1AB4B83C001D47A5 /* Infographics.swift */,
+				008C60AD1AC039F700C6715E /* ReviewAppViewController.swift */,
 				E8D93D761AB4B1DB001D47A5 /* infographic1.jpg */,
 				97691A9D1AA92BA300A210D1 /* Images.xcassets */,
 				E8E5B5831AB7988B00D10DC3 /* Share-50.png */,
@@ -275,6 +282,8 @@
 		EE2B43B01AB99EDF003C5BA2 /* Top bar */ = {
 			isa = PBXGroup;
 			children = (
+				008C60B31AC0421400C6715E /* cross.png */,
+				008C60B11AC03D3400C6715E /* heart.png */,
 				EE2B43BD1AB9A092003C5BA2 /* back.png */,
 				EE2B43BE1AB9A092003C5BA2 /* back@2x.png */,
 				EE2B43B11AB99EDF003C5BA2 /* cart.png */,
@@ -376,6 +385,7 @@
 			files = (
 				E8E5B58A1AB7988B00D10DC3 /* Back-50.png in Resources */,
 				E8E5B5891AB7988B00D10DC3 /* Put In-50.png in Resources */,
+				008C60B41AC0421400C6715E /* cross.png in Resources */,
 				E8A025641AB6100000A294D1 /* portugal_galao_cup.jpg in Resources */,
 				27BAB35A1AB7000700D9B60C /* coffee_active@2x.png in Resources */,
 				97691A9F1AA92BA300A210D1 /* Images.xcassets in Resources */,
@@ -395,6 +405,7 @@
 				E8A025571AB5FE1400A294D1 /* brewing_methods.jpg in Resources */,
 				E8E5B57D1AB665D100D10DC3 /* melange_cup.jpg in Resources */,
 				E8A025621AB6100000A294D1 /* flat_white_cup.jpg in Resources */,
+				008C60B21AC03D3400C6715E /* heart.png in Resources */,
 				EE2B43B81AB99EDF003C5BA2 /* cart@2x.png in Resources */,
 				97F4053D1AA6D23F0091AA50 /* logo_square_big.jpg in Resources */,
 				E8A025561AB5FE1400A294D1 /* pourover.jpg in Resources */,
@@ -442,6 +453,7 @@
 				E8D93D7B1AB4B83C001D47A5 /* Infographics.swift in Sources */,
 				E8D93D7D1AB5F9E0001D47A5 /* PageItemController.swift in Sources */,
 				EE0A61BC1ABACFC400E365A4 /* DidYouKnowViewController.swift in Sources */,
+				008C60AF1AC039F700C6715E /* ReviewAppViewController.swift in Sources */,
 				E8CE5CB81AA1194C00D8AF5A /* AppDelegate.swift in Sources */,
 				97F4053F1AA6DD580091AA50 /* CountryViewController.swift in Sources */,
 				EE0A61BA1ABACDD500E365A4 /* StylesViewController.swift in Sources */,
@@ -563,7 +575,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CofficionadoTabbed/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -577,7 +589,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CofficionadoTabbed/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
