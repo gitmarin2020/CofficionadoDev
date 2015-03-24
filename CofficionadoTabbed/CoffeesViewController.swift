@@ -60,9 +60,9 @@ class CoffeesViewController: UIViewController, UITableViewDataSource, UITableVie
             let text = tableContent[indexPath.row];
             selectedRow = text;
             
-            cell.textLabel.text = text;
-            cell.textLabel.font = UIFont (name: "Gill Sans", size: 20)
-            cell.textLabel.textColor = UIColor.whiteColor();
+            cell.textLabel?.text = text;
+            cell.textLabel?.font = UIFont (name: "Gill Sans", size: 20)
+            cell.textLabel?.textColor = UIColor.whiteColor();
             cell.backgroundColor = UIColor.clearColor();
             
             return cell;

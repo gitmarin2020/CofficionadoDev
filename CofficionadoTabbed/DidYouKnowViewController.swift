@@ -13,11 +13,25 @@ class DidYouKnowViewController: UIViewController, UITableViewDataSource, UITable
     @IBOutlet weak var didYouKnowTable: UITableView!
     
     
-    var dataArray = [
-        "Coffee Brewing Methods",
-        "Coffee Knowledge",
-        "How Coffee Changed America"
+    
+    var didYouKnowArray = [
+        [
+            "name"  : "Coffee Brewing Methods",
+            "image" : "brewing_methods.jpg"
+        ],
+        
+        [
+            "name"  : "Coffee Knowledge",
+            "image" : "infographic3.jpg"
+        ]
+        ,
+        [
+            "name"  : "How Coffee Changed America",
+            "image" : "infographic1.jpg"
+        ]
     ];
+
+    
     
     var selectedRow = "";
 
@@ -31,6 +45,8 @@ class DidYouKnowViewController: UIViewController, UITableViewDataSource, UITable
         
         // SET BACKGROUND
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg1")!);
+        
+        
 
     }
 
@@ -46,34 +62,36 @@ class DidYouKnowViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataArray.count;
+        return didYouKnowArray.count;
     }
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) ->
         UITableViewCell {
             var cell = UITableViewCell();
-            let text = dataArray[indexPath.row];
+            let text = didYouKnowArray[indexPath.row]["name"];
            
-            cell.textLabel.text = text;
-            cell.textLabel.font = UIFont (name: "Gill Sans", size: 20)
-            cell.textLabel.textColor = UIColor.whiteColor();
+            cell.textLabel?.text = text;
+            cell.textLabel?.font = UIFont (name: "Gill Sans", size: 20)
+            cell.textLabel?.textColor = UIColor.whiteColor();
             cell.backgroundColor = UIColor.clearColor()
             
             return cell;
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        selectedRow = dataArray[indexPath.row];
-       // self.performSegueWithIdentifier("Infographics", sender:self)
-       // return;
+        selectedRow = didYouKnowArray[indexPath.row]["image"]!
+        self.performSegueWithIdentifier("INFOGRAPHICS-SEGUE", sender:self)
+        return;
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+         //Get the new view controller using segue.destinationViewController.
+         //Pass the selected object to the new view controller.
         
-     //   var webViewController = (segue.destinationViewController as Infographics);
+        var infoGraphicsController = (segue.destinationViewController as InfoGraphicsViewController);
+        infoGraphicsController.imageName = selectedRow
+        
        
     }
 

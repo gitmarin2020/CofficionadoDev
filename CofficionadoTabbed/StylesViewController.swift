@@ -12,35 +12,10 @@ class StylesViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     @IBOutlet weak var tableStyles: UITableView!
     
-    var styles = [
-        "The Americano",
-        "The Cappucinno",
-        "The Espresso",
-        "The Flatwhite",
-        "The Galao",
-        "The Icecoffee",
-        "The Latte",
-        "The Macchiato",
-        "The Melange",
-        "The Tripplo",
-        "The Viennese"
-    ];
+    var stylesArray : NSArray!
+    var selectedIndex : Int!
     
-    var stylesImgs = [
-        "americano",
-        "cappucinno",
-        "espresso",
-        "flatwhite",
-        "galao",
-        "icecoffee",
-        "latte",
-        "macchiato",
-        "melange",
-        "tripplo",
-        "viennese"
-    ];
     
-    var selectedRow = "";
     
     override func viewDidLoad() {
         
@@ -53,6 +28,13 @@ class StylesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg1")!);
         
         
+        //Getting data from 'Styles.plist' from resource folder
+        if let path = NSBundle.mainBundle().pathForResource("Styles", ofType: "plist") {
+            stylesArray = NSArray(contentsOfFile: path)
+        }
+       
+        
+        
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -60,7 +42,7 @@ class StylesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return stylesImgs.count;
+        return stylesArray.count;
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -70,9 +52,10 @@ class StylesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) ->
         UITableViewCell {
             var cell = UITableViewCell();
-            let text = styles[indexPath.row];
+            let text = stylesArray[indexPath.row]["name"];
             
-            var image : UIImage = UIImage(named: stylesImgs[indexPath.row])!;
+            let imageName = stylesArray[indexPath.row]["image"] as String
+            var image : UIImage = UIImage(named: imageName)! as UIImage;
             var imageView = UIImageView(image: image);
             imageView.frame = CGRect(x: (tableStyles.bounds.size.width/2) - (316/2), y: 5, width: image.size.width/3, height: image.size.height/3);
             
@@ -82,14 +65,14 @@ class StylesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        selectedRow = styles[indexPath.row];
+        selectedIndex = indexPath.row
         self.performSegueWithIdentifier("StyleViewController", sender:self)
         return;
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var styleViewController = (segue.destinationViewController as StyleViewController);
-        styleViewController.value = selectedRow;
+        var styleViewController = (segue.destinationViewController as StyleDetailViewController);
+        styleViewController.styleDetailData = stylesArray[selectedIndex] as NSDictionary;
     }
     
     

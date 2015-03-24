@@ -109,7 +109,6 @@ class CountryViewController: UIViewController {
     
     @IBAction func shareButtonAction(sender: AnyObject) {
         
-        
         let textToShare = "I learned so much about coffee thanks to grate app you should try it too !"
         
         if let myWebsite = NSURL(string: "www.appliationURLhere.com")
